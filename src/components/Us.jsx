@@ -8,28 +8,31 @@ const Us = () => {
       name: "Nguyễn Công Minh Tuấn",
       age: 20,
       education: "FPT University",
-      phone: "+123456789",
-      facebook: "https://facebook.com/johndoe",
-      github: "https://github.com/johndoe",
-      quote: "Code is like humor. When you have to explain it, it’s bad.",
+      phone: "+84 354 031 289",
+      facebook: "https://www.facebook.com/congminhtuan.nguyen",
+      github: "https://github.com/OrlandoNguyen",
+      quote: "Code is like humor. When you have to explain it, it's bad.",
+      avatar: "/images/Tuan.jpg"
     },
     {
       name: "Đặng Quang Huy",
       age: 20,
       education: "FPT University",
-      phone: "+987654321",
-      facebook: "https://facebook.com/janesmith",
-      github: "https://github.com/janesmith",
-      quote: "Data is the new oil.",
+      phone: "+84 943 241 038",
+      facebook: "https://www.facebook.com/h.ngquang/",
+      github: "https://github.com/HyuDeQueue",
+      quote: "One leetcode a day keep the unemployment away.",
+      avatar: "/images/Huy.jpg"
     },
     {
       name: "Nguyễn Hữu Phúc",
       age: 20,
       education: "FPT University",
-      phone: "+192837465",
-      facebook: "https://facebook.com/alexbrown",
-      github: "https://github.com/alexbrown",
+      phone: "+84 928 374 465",
+      facebook: "https://www.facebook.com/nonobeam",
+      github: "https://github.com/Nonobeam",
       quote: "Keep it simple, but significant.",
+      avatar: "/images/Phuc.jpg"
     },
   ];
 
@@ -40,7 +43,7 @@ const Us = () => {
         {team.map((member, index) => (
           <div className="card" key={index}>
             <div className="image-placeholder">
-              <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Faker_2020_interview.jpg" alt="Profile" />
+              <img src={member.avatar} alt="Profile" />
             </div>
             <div className="info">
               <h5>
