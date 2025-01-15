@@ -14,13 +14,13 @@ const Projects = () => {
     },
     {
       projectName: "Dashdot",
-      projectDescription: "Simply viewing server resource usage",
+      projectDescription: "Basically viewing our server resource usage",
       imageSrc: "https://getdashdot.com/img/screenshot_darkmode.png",
       link: "http://pog.threemusketeer.click:3001"
     },
     {
       projectName: "Roomify",
-      projectDescription: "Virtual, Interactive Conference Room",
+      projectDescription: "Virtual, Interactive Conference Room (In Development)",
       imageSrc: "https://www.ismartkids.vn/uploads/images/cute-la-gi-cach-de-tro-thanh-mot-co-gai-cute-2.jpeg",
       link: "https://pog.threemusketeer.click"
     },
