@@ -1,4 +1,3 @@
-import React from 'react';
 import { Carousel } from 'react-responsive-3d-carousel';
 import 'react-responsive-3d-carousel/dist/styles.css';  
 import Card from './Card';
