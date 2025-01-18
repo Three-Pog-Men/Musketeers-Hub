@@ -11,11 +11,11 @@ const NavBar = () => {
             alt="The Musketeers"
             style={{ width: "40px", height: "40px", marginRight: "10px" }}
           />
-          <span>The Musketeers</span>
+          <span id='spanName'>The Musketeers</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
+          <Nav className="ms-auto custom-nav">
             <Nav.Link href="#us">Us</Nav.Link>
             <Nav.Link href="#about-us">About Us</Nav.Link>
             <Nav.Link href="#projects">Projects</Nav.Link>

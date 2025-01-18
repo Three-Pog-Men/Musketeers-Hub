@@ -1,0 +1,20 @@
+.custom-nav .nav-link {
+    font-size: 1.25rem;
+    font-weight: bold;
+    padding: 0.5rem 1rem; 
+    color: #333; 
+    text-transform: uppercase;
+  }
+  
+  .custom-nav .nav-link:hover {
+    color: #007bff; 
+  }
+
+  #spanName{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  #spanName:hover{
+    color: #007bff; 
+  }
+  

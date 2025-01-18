@@ -40,7 +40,7 @@ const Us = () => {
 
   return (
     <div className="us-container">
-      <h2 className="text-center mb-4">Meet The Knights</h2>
+      <h2 className="text-center mb-4 knightTextStyle">Meet The Knights</h2>
       <div className="team-cards">
         {team.map((member, index) => (
           <div className="card" key={index}>
