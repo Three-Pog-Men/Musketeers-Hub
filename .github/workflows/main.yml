@@ -30,8 +30,7 @@ jobs:
           cd /home/admin/Documents/Musketeers-Hub
           git stash || true  # Ignore errors if there are no stashed changes
           git pull
-          echo "${{ secrets.SSH_PASS }}" | sudo -S
-          docker stop Hub-container
-          docker rm Hub-container
-          docker run -d -p 5172:5172 --name Hub-container hub
+          echo "${{ secrets.SSH_PASS }}" | sudo -S docker stop Hub-container
+          echo "${{ secrets.SSH_PASS }}" | sudo -S docker rm Hub-container
+          echo "${{ secrets.SSH_PASS }}" | sudo -S docker run -d -p 5172:5172 --name Hub-container hub
         EOF
