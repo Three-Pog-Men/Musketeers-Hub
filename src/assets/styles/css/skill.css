@@ -1,0 +1,43 @@
+.myskills {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.skills-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: center;
+}
+
+.skills-row {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.skill-card {
+  background: #2b2b2b;
+  color: white;
+  padding: 1.5rem;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-card p {
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.skill-card:hover {
+  background-color: var(--main-color);
+}

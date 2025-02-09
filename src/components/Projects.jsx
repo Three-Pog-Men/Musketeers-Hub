@@ -1,7 +1,6 @@
-import React from 'react';
 import { Carousel } from 'react-responsive-3d-carousel';
 import 'react-responsive-3d-carousel/dist/styles.css';  
-import Card from './card';
+import Card from './Card';
 import "../assets/styles/css/projects.css"
 
 const Projects = () => {
@@ -28,7 +27,7 @@ const Projects = () => {
 
   const carouselItems = projects.map((project, index) => (
     <Card
-      key={index}
+      key={project.projectName}
       projectName={project.projectName}
       projectDescription={project.projectDescription}
       imageSrc={project.imageSrc}
@@ -42,7 +41,6 @@ const Projects = () => {
       <Carousel
         items={carouselItems}
         startIndex={0}
-        onChange={(currentIndex) => console.log(currentIndex)}
         perspective={1}
         perspectiveOrigin='center'
         autoPlay={true} 

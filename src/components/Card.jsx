@@ -1,6 +1,9 @@
 import React from "react";
+import PropTypes from "prop-types";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 import "../assets/styles/css/card.css";
-import { Button } from "react-bootstrap";
 
 const Card = ({ projectName, projectDescription, imageSrc, link }) => {
   return (
@@ -9,14 +12,23 @@ const Card = ({ projectName, projectDescription, imageSrc, link }) => {
         <img src={imageSrc} alt={projectName} />
       </div>
       <div className="info">
-        <h3 className="project-name">{projectName}</h3>
+        <h2 className="project-name">{projectName}</h2>
         <p className="project-description">{projectDescription}</p>
-        <Button variant="primary" onClick={() => window.open(link, "_blank")}>
-          Navigate
-        </Button>
+        <FontAwesomeIcon 
+          icon={faArrowRight} 
+          className="navigate-arrow"
+          onClick={() => window.open(link, "_blank")} 
+        />
       </div>
     </div>
   );
+};
+
+Card.propTypes = {
+  projectName: PropTypes.string.isRequired,
+  projectDescription: PropTypes.string.isRequired,
+  imageSrc: PropTypes.string.isRequired,
+  link: PropTypes.string.isRequired,
 };
 
 export default Card;

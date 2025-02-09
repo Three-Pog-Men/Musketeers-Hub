@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { FaArrowUp } from "react-icons/fa";
+import { FaArrowUp } from 'react-icons/fa';
 import "../assets/styles/css/backToTop.css";
 
 const BackToTop = () => {
@@ -14,15 +14,24 @@ const BackToTop = () => {
       }
     };
 
-    window.addEventListener("scroll", handleScroll);
-
+    window.addEventListener('scroll', handleScroll);
     return () => {
-      window.removeEventListener("scroll", handleScroll);
+      window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    let currentPosition = window.scrollY;
+    const scrollStep = currentPosition / 25;
+
+    const scrollInterval = setInterval(() => {
+      if (currentPosition > 0) {
+        window.scrollBy(0, -scrollStep);
+        currentPosition -= scrollStep;
+      } else {
+        clearInterval(scrollInterval);
+      }
+    }, 10);
   };
 
   return (
