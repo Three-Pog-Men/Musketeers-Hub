@@ -32,5 +32,6 @@ jobs:
           git pull
           echo "${{ secrets.SSH_PASS }}" | sudo -S docker stop Hub-container
           echo "${{ secrets.SSH_PASS }}" | sudo -S docker rm Hub-container
+          echo "${{ secrets.SSH_PASS }}" | sudo -S docker buildx build -f /home/admin/Documents/Musketeers-Hub/Dockerfile -t hub .
           echo "${{ secrets.SSH_PASS }}" | sudo -S docker run -d -p 5172:5172 --name Hub-container hub
         EOF
