@@ -9,12 +9,10 @@ const AboutUs = () => {
           <p>
             We are a passionate team of developers committed to delivering high-quality, innovative solutions to the world.
             Our expertise spans across various fields, including web development, data science, and software engineering.
-            Our goal is to create products that solve real-world problems and make a positive impact on the community.
+            <p className="goal">Our goal is to create products that solve real-world problems and make a positive impact on the community.</p>
           </p>
         </div>
-        <div className="about-us-image">
-          <img src="/images/3musketeers.png" alt="Team" className="rounded" />
-        </div>
+        <img src="/images/3musketeers.png" alt="Team" className="rounded" />
       </div>
     </div>
   );

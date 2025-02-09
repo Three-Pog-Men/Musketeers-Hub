@@ -27,7 +27,7 @@ const Projects = () => {
 
   const carouselItems = projects.map((project, index) => (
     <Card
-      key={index}
+      key={project.projectName}
       projectName={project.projectName}
       projectDescription={project.projectDescription}
       imageSrc={project.imageSrc}
@@ -41,7 +41,6 @@ const Projects = () => {
       <Carousel
         items={carouselItems}
         startIndex={0}
-        onChange={(currentIndex) => console.log(currentIndex)}
         perspective={1}
         perspectiveOrigin='center'
         autoPlay={true} 

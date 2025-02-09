@@ -1,32 +1,3 @@
-#landingPage {
-  width: 70%;
-  margin: 0 auto;
-  position: relative;
-  z-index: 1;
-  opacity: 0.995;
-}
-
-#landingPage::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0, 0);
-  opacity: 0.1;
-  z-index: -1;
-  pointer-events: none;
-}
-
 html {
   scroll-behavior: smooth;
-}
-.main-container{
-  background-color: rgb(255, 255, 255);
-  background-image: url('https://t4.ftcdn.net/jpg/04/93/49/37/360_F_493493706_jP0lDchc8vMySihawHZG1RPvLOnJ1iqs.jpg'); 
-  background-size: cover;
-  background-position: center; 
-  background-attachment: fixed; 
-  background-repeat: no-repeat; 
 }
